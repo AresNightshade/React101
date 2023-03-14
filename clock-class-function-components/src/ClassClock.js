@@ -22,7 +22,7 @@ class ClassClock extends Component {
 		let body = (
 			<div>
 				<h1>Class Component</h1>
-				<h2>Counter: {this.state.counter && this.state.counter}</h2>
+				<h2>Counter: {this.state.counter}</h2>
 				<h3>
 					The Current time is:{' '}
 					{this.state.clockData && this.state.clockData.toLocaleTimeString()}
