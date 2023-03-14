@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function Clock(props) {
+function FunctionalClock(props) {
 	//
 	const [clockData, setClock] = useState(props.date);
 	const [counter, setCounter] = useState(0);
@@ -22,10 +22,11 @@ function Clock(props) {
 
 	return (
 		<div>
-			<h1>Counter: {counter}</h1>
-			<h2>The Current time is: {clockData.toLocaleTimeString()}</h2>
+			<h1>Functional Component</h1>
+			<h2>Counter: {counter}</h2>
+			<h3>The Current time is: {clockData.toLocaleTimeString()}</h3>
 		</div>
 	);
 }
 
-export default Clock;
+export default FunctionalClock;
